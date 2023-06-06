@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".selectveh1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="256dp">
+
+        <!-- Back arrow button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <!-- Title: "Add Vehicles" -->
+
+        <!-- Image view -->
+
+        <!-- "Add Later" button -->
+
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="548dp"
+            android:fontFamily="@font/bungee"
+            android:text="Personalize your experience by adding your vehicle🚘"
+            android:textColor="#000000"
+            android:textSize="27sp" />
+
+        <!-- "Add Vehicles" button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="498dp"
+            android:text="Your vehicle is used to determine compatable charging station"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/vehicleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/istockphoto_155283411_612x612"
+            tools:srcCompat="@drawable/istockphoto_155283411_612x612" />
+
+        <Button
+            android:id="@+id/addLaterButton"
+            android:layout_width="147dp"
+            android:layout_height="79dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginBottom="65dp"
+            android:text="Add Later" />
+
+        <Button
+            android:id="@+id/addVehiclesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="65dp"
+            android:text="Add Vehicles" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
