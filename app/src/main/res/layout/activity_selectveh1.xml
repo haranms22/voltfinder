@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="256dp">
 
-        <!-- Back arrow button -->
+
         <ImageButton
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
@@ -24,14 +24,7 @@
             android:background="@null"
             android:src="@drawable/baseline_arrow_back_24" />
 
-        <!-- Title: "Add Vehicles" -->
 
-        <!-- Image view -->
-
-        <!-- "Add Later" button -->
-
-
-        <!-- "Add Vehicles" button -->
 
         <TextView
             android:id="@+id/titleTextView"
@@ -40,7 +33,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="508dp"
+            android:layout_marginBottom="650dp"
             android:fontFamily="@font/bungee"
             android:text="Personalize your experience by adding your vehicle🚘"
             android:textColor="#000000"

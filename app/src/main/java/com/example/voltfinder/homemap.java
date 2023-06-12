@@ -1,21 +1,17 @@
 package com.example.voltfinder;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SearchView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -45,7 +41,7 @@ public class homemap extends FragmentActivity implements OnMapReadyCallback{
     FusedLocationProviderClient fusedClient;
     private static final int REQUEST_CODE = 101;
     SearchView searchView;
-    private ImageButton imagebutton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,13 +50,7 @@ public class homemap extends FragmentActivity implements OnMapReadyCallback{
         map = findViewById(R.id.map);
         searchView = findViewById(R.id.search);
         searchView.clearFocus();
-        imagebutton = findViewById(R.id.navButton);
-        imagebutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.activity_homenav);
-            }
-        });
+
         fusedClient = LocationServices.getFusedLocationProviderClient(this);
         getLocation();
 
@@ -99,7 +89,6 @@ public class homemap extends FragmentActivity implements OnMapReadyCallback{
             }
         });
     }
-
 
     private void getLocation() {
         if (ActivityCompat.checkSelfPermission(

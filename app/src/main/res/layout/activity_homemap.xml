@@ -15,18 +15,6 @@
         android:layout_height="match_parent"
         tools:layout="@layout/activity_homemap" />
 
-    <ImageButton
-        android:id="@+id/navButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@null"
-        android:src="@drawable/baseline_menu_24" />
-
-
-
     <androidx.appcompat.widget.SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,44 +26,8 @@
         app:queryHint="Search location"
         android:focusable="false"
         app:closeIcon="@drawable/baseline_close_24"
-        app:searchIcon="@drawable/baseline_search_24"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="?attr/colorButtonNormal"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            android:src="@drawable/baseline_home_24" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/baseline_account_circle_24" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/hotel" />
-
-    </LinearLayout>
+        app:searchIcon="@drawable/baseline_search_24"
+        android:background="@color/material_dynamic_neutral70"/>
 
 
 </RelativeLayout>

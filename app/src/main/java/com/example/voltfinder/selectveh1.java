@@ -23,7 +23,7 @@ public class selectveh1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_selectvehmodel);
+                setContentView(R.layout.activity_homemap);
             }
         });
 

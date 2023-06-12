@@ -1,5 +1,6 @@
 package com.example.voltfinder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,6 +23,7 @@ public class selectvehmodel extends AppCompatActivity {
     private TextView titleTextView;
     private SearchView searchBar;
     private ListView brandListView;
+    private Button button;
 
 
     private List<String> electricBrands = Arrays.asList(
@@ -43,10 +45,10 @@ public class selectvehmodel extends AppCompatActivity {
         titleTextView = findViewById(R.id.titleTextView);
         searchBar = findViewById(R.id.searchBar);
         brandListView = findViewById(R.id.brandListView);
+        button = findViewById(R.id.buttonn);
 
         backButton.setOnClickListener(v -> onBackPressed());
-
-
+        button.setOnClickListener(v -> go());
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, electricBrands);
         brandListView.setAdapter(adapter);
@@ -55,13 +57,15 @@ public class selectvehmodel extends AppCompatActivity {
             String selectedBrand = electricBrands.get(position);
             Toast.makeText(selectvehmodel.this, "Selected brand: " + selectedBrand, Toast.LENGTH_SHORT).show();
             // Perform further action based on the selected brand
-            Button button3= findViewById(R.id.buttonn);
-            button3.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    setContentView(R.layout.activity_homemap);
-                }
-            });
+
         });
+    }
+        public void go(){
+            Intent intent = new Intent(selectvehmodel.this, homemap.class);
+            startActivity(intent);
+        }
+        public void onBackPressed(){
+            Intent intent = new Intent(selectvehmodel.this, selectvehmodel.class);
+            startActivity(intent);
     }
 }
