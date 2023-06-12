@@ -5,6 +5,7 @@
     <uses-permission android:name="@android.permission.INTERNET" />
     <uses-permission android:name="@android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="@android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +18,30 @@
         android:theme="@style/Theme.VoltFinder"
         tools:targetApi="31">
         <activity
-            android:name=".home"
+            android:name=".homenav"
+            android:exported="false"
+            android:label="@string/title_activity_homenav"
+            android:theme="@style/Theme.VoltFinder.NoActionBar" />
+        <activity
+            android:name=".selectvehmodel"
+            android:exported="false" />
+        <activity
+            android:name=".homemap"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".dialog_forgot"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -33,21 +57,19 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyADjw3q9uZDSR3w3Pb8jkGSILlJfKrhcLA" />
-
-        <activity
-            android:name=".selectbrand"
-            android:exported="false" />
-           <meta-data
+        <meta-data
             android:name="android.app.lib_name"
             android:value="" />
+
         <activity
             android:name=".selectveh1"
             android:exported="true" />
-          <meta-data
+
+        <meta-data
             android:name="android.app.lib_name"
             android:value="" />
-        <activity
 
+        <activity
             android:name=".crprofile"
             android:exported="false" />
         <activity
@@ -57,7 +79,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".login"
             android:exported="false">

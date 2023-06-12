@@ -23,7 +23,7 @@ public class selectveh1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_login);
+                setContentView(R.layout.activity_selectvehmodel);
             }
         });
 
@@ -36,7 +36,7 @@ public class selectveh1 extends AppCompatActivity {
         });
     }
     public void selectbrand(){
-        Intent intent = new Intent(selectveh1.this, selectbrand.class);
+        Intent intent = new Intent(selectveh1.this, LoginActivity.class);
         startActivity(intent);
     }
 }

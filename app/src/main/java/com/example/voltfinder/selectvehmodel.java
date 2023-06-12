@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -15,12 +16,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Arrays;
 import java.util.List;
 
-public class selectbrand extends AppCompatActivity {
+public class selectvehmodel extends AppCompatActivity {
 
     private ImageButton backButton;
     private TextView titleTextView;
     private SearchView searchBar;
     private ListView brandListView;
+
 
     private List<String> electricBrands = Arrays.asList(
             "Tata Motors",
@@ -35,7 +37,7 @@ public class selectbrand extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_selectbrand);
+        setContentView(R.layout.activity_selectvehmodel);
 
         backButton = findViewById(R.id.backButton);
         titleTextView = findViewById(R.id.titleTextView);
@@ -44,13 +46,22 @@ public class selectbrand extends AppCompatActivity {
 
         backButton.setOnClickListener(v -> onBackPressed());
 
+
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, electricBrands);
         brandListView.setAdapter(adapter);
 
         brandListView.setOnItemClickListener((parent, view, position, id) -> {
             String selectedBrand = electricBrands.get(position);
-            Toast.makeText(selectbrand.this, "Selected brand: " + selectedBrand, Toast.LENGTH_SHORT).show();
+            Toast.makeText(selectvehmodel.this, "Selected brand: " + selectedBrand, Toast.LENGTH_SHORT).show();
             // Perform further action based on the selected brand
+            Button button3= findViewById(R.id.buttonn);
+            button3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    setContentView(R.layout.activity_homemap);
+                }
+            });
         });
     }
 }

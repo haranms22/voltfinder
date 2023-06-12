@@ -31,20 +31,21 @@
         <!-- "Add Later" button -->
 
 
+        <!-- "Add Vehicles" button -->
+
         <TextView
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="548dp"
+            android:layout_marginBottom="508dp"
             android:fontFamily="@font/bungee"
             android:text="Personalize your experience by adding your vehicle🚘"
             android:textColor="#000000"
             android:textSize="27sp" />
 
-        <!-- "Add Vehicles" button -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
         <Button
             android:id="@+id/addLaterButton"
             android:layout_width="147dp"
-            android:layout_height="79dp"
+            android:layout_height="58dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="43dp"
@@ -80,7 +81,7 @@
         <Button
             android:id="@+id/addVehiclesButton"
             android:layout_width="wrap_content"
-            android:layout_height="79dp"
+            android:layout_height="58dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="43dp"
