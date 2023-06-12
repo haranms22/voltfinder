@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585723698212",
+    "project_id": "voltfinder",
+    "storage_bucket": "voltfinder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585723698212:android:bc6c22b806c4915a368cb1",
+        "android_client_info": {
+          "package_name": "com.example.voltfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585723698212-d5garhfql93rpol0pf3q36b129lflm25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVm04NAC7D6jSOGpRi7WhWolJm3pg-KjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585723698212-d5garhfql93rpol0pf3q36b129lflm25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
